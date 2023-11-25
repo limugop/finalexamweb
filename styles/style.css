@@ -1,0 +1,414 @@
+
+
+:root {
+    --primary: #8a2be2;
+    --secondary: #FFD428;
+    --grey: #4E586E;
+    --white: #f5f2ff;
+}
+.wrapper {
+  background-color: var(--white);
+    padding: 20px;
+    height: 400px;
+    width: 350px;
+    border: 2px solid var(--grey);
+}
+.wrapper h3{
+    text-align: center;
+}
+.submitButton {
+    text-align: end;
+}
+@import url("/fonts/OptimusPrinceps.ttf");
+@font-face {
+  font-family: 'myFirstFont';
+  src: url('/fonts/OptimusPrinceps.ttf') format('truetype');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'myFirstFont', sans-serif;    
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: var(--white) !important;
+}
+/* Пример стилей для поискового поля и результатов поиска */
+#searchInput {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+#searchResults {
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.mask{
+  width: 100%;
+  height: 100%;
+  background-color:#000000;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  transition: 0.6s;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size: 150px;
+}
+.hide{
+  opacity: 0;
+}
+#load {
+  position: absolute;
+  width: 600px;
+  height: 36px;
+  left: 50%;
+  top: 40%;
+  margin-left: -300px;
+  overflow: visible;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+#load p {
+  white-space: nowrap;
+  position: absolute;
+  width: 20px;
+  height: 36px;
+  opacity: 0;
+  font-family: 'myFirstFont', sans-serif;   
+  animation: fadeIn 2s linear infinite;
+  color: #b60000;
+}
+
+.fade-in-text {
+  font-family: Arial;
+  font-size: 60px;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-link {
+  color: black !important;
+}
+
+#introCarousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+  height: 100vh;
+}
+
+#introCarousel {
+  padding-top: 50px;
+}
+
+.carousel-item:nth-child(1) {
+  background-image: url('/image/Arthas.avif');
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+  background-image: url("/image/37299s3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  object-fit: cover;
+}
+
+.carousel-item:nth-child(3) {
+  background-image: url('/image/n43082.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.carousel-item:nth-child(4) {
+  background-image: url('/image/placido-domingo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  object-fit: cover;
+}
+
+
+@media (min-width: 992px) {
+  #introCarousel {
+    margin-top: -58.59px;
+  }
+
+  #introCarousel,
+  .carousel-inner,
+  .carousel-item,
+  .carousel-item.active {
+    height: 50vh;
+  }
+}
+
+.Main {
+  margin: 30px 150px;
+  background-color: rgba(255, 255, 255, 0.336);
+  flex: 1;
+  min-height: calc(100vh - 40px);
+  margin-bottom: 30px;
+}
+
+
+
+.Main img {
+  width: 200px;
+  height: 200px;
+}
+
+
+
+.rounded-circle:hover {
+border-style: dashed;
+
+}
+
+
+
+.footer-clean {
+  padding: 50px 0;
+  background-color: #fff;
+  color: #4b4c4d;
+}
+
+.footer-clean h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.footer-clean ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.footer-clean ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-clean ul a:hover {
+  opacity: 1;
+}
+
+.footer-clean .item.social {
+  text-align: right;
+}
+
+@media (max-width:767px) {
+  .footer-clean .item {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-clean .item.social {
+    text-align: center;
+  }
+}
+
+.footer-clean .copyright {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600$display=swap');
+
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 'Poppins' , sans-serif;
+}
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;  
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+
+}
+.card {
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.image-content,.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #000000;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #000000;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+button{
+  border: none;
+  font-size: 16px;
+  color: #FFF;
+  padding: 8px 16px;
+  background-color: #000000;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover{
+  background: #000000;
+}
+
+
+.btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns a{
+  width: 130px;
+  height: 40px;
+  border:none;
+  outline: none;
+  color: #ffffff;
+  background-color: #3963f0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.btns a:hover{
+  background-color: #284fd1;
+}
+
+
+

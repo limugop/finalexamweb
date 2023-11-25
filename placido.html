@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The great voice</title>
+  <link rel="icon" href="image/podcaster.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <style>
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .button-container button {
+      margin: 5px;
+    }
+
+    .read-more {
+      margin-bottom: 10px;
+    }
+    .btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btns a{
+  width: 130px;
+  height: 40px;
+  border:none;
+  outline: none;
+  color: #ffffff;
+  background-color: #3963f0;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+.btns a:hover{
+  background-color: #284fd1;
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+  </style>
+
+</head>
+
+<body>
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+    <a href="index.html" style="color: black; text-decoration: none;;"><svg class="bi" width="40" height="32"
+        role="img" aria-label="Bootstrap">
+        <img src = "image/podcaster.png" alt="" width="50" height="50">
+      </svg> </a>
+    <div class="col-md-3 mb-2 mb-md-0">
+      <a href="" class="d-inline-flex link-body-emphasis text-decoration-none">
+      </a>
+    </div>
+    <span style="font-size: 24px; text-transform: uppercase; font-weight: bold;"><a href="index.html"
+        style="color: black; text-decoration: none;;">the great voice</a></span>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="index.html" class="nav-link px-2 link-secondary">Main</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          More...
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="arthas.html">Voiceover</a></li>
+          <li><a class="dropdown-item" href="placido.html">Singing</a></li>
+          <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+        </ul>
+      </li>
+      <li><a href="login.html" class="nav-link px-2">Login</a></li>
+    </ul>
+    <input type="text" id="searchInput" placeholder="Search">
+    <div id="searchResults"></div>
+
+
+  </header>
+  <main>
+
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src = "image/8p_dolmingo_2k_150.jpg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Plácido Domingo</h2>
+            <p class="lead">
+              SINGER, CONDUCTOR & ADMINISTRATOR
+            </p>
+            <p>
+              Plácido Domingo is a world-renowned, multifaceted artist. Recognized as one of the finest and most
+              influential singing actors in the history of opera, he is also a conductor and a major force as an opera
+              administrator.
+            </p>
+
+            <a href="https://www.placidodomingo.com/" class="btn btn-light mt-3" target="_blank">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+
+            
+
+            <!-- ... Your existing HTML code ... -->
+
+<div class="button-container">
+  <div class="dropdown">
+    <button class="dropbtn">Select Sound</button>
+    <div class="dropdown-content">
+      <button onclick="playSound('sound1')">Agustín Lara: Granada</button>
+      <button onclick="playSound('sound2')">E lucevan le stelle-Tosca</button>
+      <button onclick="playSound('sound3')">Be my love</button>
+    </div>
+  </div>
+</div>
+
+<audio id="sound1" src = "resoures/Agustín Lara Granada.mp3"></audio>
+<audio id="sound2" src = "resoures/E lucevan le stelle-Tosca.mp3"></audio>
+<audio id="sound3" src = "resoures/Placido Domingo-Be my love.mp3"></audio>
+
+<!-- ... Your existing script ... -->
+
+
+            <audio id="sound1" src = "resoures/Agustín Lara Granada.mp3"></audio>
+            <audio id="sound2" src = "resoures/E lucevan le stelle-Tosca.mp3"></audio>
+            <audio id="sound3" src = "resoures/Placido Domingo-Be my love.mp3"></audio>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function playSound(soundId) {
+          var audio = $("#" + soundId)[0];
+      
+          if (audio.paused) {
+            $('audio').not("#" + soundId).each(function () {
+              this.pause();
+              this.currentTime = 0;
+            });
+      
+            audio.play();
+          } else {
+            audio.pause();
+            audio.currentTime = 0;
+          }
+        }
+      
+        $(document).ready(function () {
+        });
+      </script>
+      
+      
+      
+    </section>
+
+
+
+    <div class="btns">
+      <a href="arthas.html">Previous</a>
+      <a href="index.html">Next</a>
+  </div>
+  </main>
+
+  <footer class="text-center text-lg-start text-white" style="background-color: rgb(51, 51, 51)">
+    <div class="container p-4 pb-0">
+      <section class="">
+        <div class="row">
+          <hr class="w-100 clearfix d-md-none" />
+          <div class=" mx-auto ">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Astana, KZ</p>
+            <p><i class="fas fa-envelope mr-3"></i> voices@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 7 7779504472</p>
+            <p><i class="fas fa-print mr-3"></i> + 7 7704194138</p>
+          </div>
+        </div>
+      </section>
+      <hr class="my-3">
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <div class="p-3">
+              © 2023 Copyright: Kazken Kali
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </footer>
+  <script type="text/javascript"
+    src="https://mdbootstrap.com/api/snippets/static/download/MDB5-Free_6.4.2/js/mdb.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

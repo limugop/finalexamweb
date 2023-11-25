@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header >
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="index.html">Main</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="arthas.html">Voiceover</a></li>
+                <li><a href="placido.html">Singing</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <div class="container-fluid" style="display: flex; justify-content: center; margin-top: 100px">
+        <div class="wrapper">
+            <h3>Authorization</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="login" class="form-label">Login</label>
+                    <input type="text" class="form-control" id="login" />
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" />
+                </div>
+                <div class="mb-3">
+                    <label for="verification" class="form-label">Verify password</label>
+                    <input type="password" class="form-control" id="verification" />
+                </div>
+                <div class="submitButton">
+                    <button type="submit" class="btn" style="background-color: #ffd428">
+                        Sign in
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="container-fluid text-center ">
+        <p>Footer Text</p>
+      </footer>
+    
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src = "styles/js.js"></script>
+</body>
+
+
+</html>
